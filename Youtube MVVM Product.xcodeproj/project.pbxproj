@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5303DBD72BE7EB950075EF3E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5303DBD62BE7EB950075EF3E /* Kingfisher */; };
 		53D5EA2D2BE74E7C00C778E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA2C2BE74E7C00C778E8 /* AppDelegate.swift */; };
 		53D5EA2F2BE74E7C00C778E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA2E2BE74E7C00C778E8 /* SceneDelegate.swift */; };
-		53D5EA312BE74E7C00C778E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA302BE74E7C00C778E8 /* ViewController.swift */; };
 		53D5EA342BE74E7C00C778E8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 53D5EA332BE74E7C00C778E8 /* Base */; };
 		53D5EA362BE74E7D00C778E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D5EA352BE74E7D00C778E8 /* Assets.xcassets */; };
 		53D5EA392BE74E7D00C778E8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 53D5EA382BE74E7D00C778E8 /* Base */; };
 		53D5EA442BE74E7D00C778E8 /* Youtube_MVVM_ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA432BE74E7D00C778E8 /* Youtube_MVVM_ProductTests.swift */; };
 		53D5EA4E2BE74E7D00C778E8 /* Youtube_MVVM_ProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA4D2BE74E7D00C778E8 /* Youtube_MVVM_ProductUITests.swift */; };
 		53D5EA502BE74E7D00C778E8 /* Youtube_MVVM_ProductUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA4F2BE74E7D00C778E8 /* Youtube_MVVM_ProductUITestsLaunchTests.swift */; };
+		53D5EA682BE750F900C778E8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA672BE750F900C778E8 /* Product.swift */; };
+		53D5EA6A2BE7544F00C778E8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA692BE7544F00C778E8 /* ApiManager.swift */; };
+		53D5EA6C2BE755FB00C778E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA6B2BE755FB00C778E8 /* Constants.swift */; };
+		53D5EA6E2BE75F8F00C778E8 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA6D2BE75F8F00C778E8 /* ProductListViewController.swift */; };
+		53D5EA712BE7DBAB00C778E8 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA702BE7DBAB00C778E8 /* ProductViewModel.swift */; };
+		53D5EA742BE7DEF300C778E8 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA722BE7DEF300C778E8 /* ProductCell.swift */; };
+		53D5EA752BE7DEF300C778E8 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D5EA732BE7DEF300C778E8 /* ProductCell.xib */; };
+		53D5EA782BE7E8F900C778E8 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5EA772BE7E8F900C778E8 /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,6 @@
 		53D5EA292BE74E7C00C778E8 /* Youtube MVVM Product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube MVVM Product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D5EA2C2BE74E7C00C778E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53D5EA2E2BE74E7C00C778E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53D5EA302BE74E7C00C778E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53D5EA332BE74E7C00C778E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53D5EA352BE74E7D00C778E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53D5EA382BE74E7D00C778E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,14 @@
 		53D5EA492BE74E7D00C778E8 /* Youtube MVVM ProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Youtube MVVM ProductUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D5EA4D2BE74E7D00C778E8 /* Youtube_MVVM_ProductUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube_MVVM_ProductUITests.swift; sourceTree = "<group>"; };
 		53D5EA4F2BE74E7D00C778E8 /* Youtube_MVVM_ProductUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube_MVVM_ProductUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53D5EA672BE750F900C778E8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		53D5EA692BE7544F00C778E8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		53D5EA6B2BE755FB00C778E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		53D5EA6D2BE75F8F00C778E8 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		53D5EA702BE7DBAB00C778E8 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		53D5EA722BE7DEF300C778E8 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		53D5EA732BE7DEF300C778E8 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		53D5EA772BE7E8F900C778E8 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5303DBD72BE7EB950075EF3E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5303DBD52BE7EB950075EF3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53D5EA202BE74E7C00C778E8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,7 @@
 				53D5EA422BE74E7D00C778E8 /* Youtube MVVM ProductTests */,
 				53D5EA4C2BE74E7D00C778E8 /* Youtube MVVM ProductUITests */,
 				53D5EA2A2BE74E7C00C778E8 /* Products */,
+				5303DBD52BE7EB950075EF3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +123,13 @@
 		53D5EA2B2BE74E7C00C778E8 /* Youtube MVVM Product */ = {
 			isa = PBXGroup;
 			children = (
-				53D5EA2C2BE74E7C00C778E8 /* AppDelegate.swift */,
-				53D5EA2E2BE74E7C00C778E8 /* SceneDelegate.swift */,
-				53D5EA302BE74E7C00C778E8 /* ViewController.swift */,
-				53D5EA322BE74E7C00C778E8 /* Main.storyboard */,
-				53D5EA352BE74E7D00C778E8 /* Assets.xcassets */,
-				53D5EA372BE74E7D00C778E8 /* LaunchScreen.storyboard */,
+				53D5EA622BE74F4F00C778E8 /* Application */,
+				53D5EA612BE74F4B00C778E8 /* Constants */,
+				53D5EA602BE74F4500C778E8 /* Extension */,
+				53D5EA5F2BE74F4200C778E8 /* Helper */,
+				53D5EA5E2BE74F4000C778E8 /* Screen */,
+				53D5EA5D2BE74F3D00C778E8 /* Storyboard */,
+				53D5EA5C2BE74F3900C778E8 /* Resources */,
 				53D5EA3A2BE74E7D00C778E8 /* Info.plist */,
 			);
 			path = "Youtube MVVM Product";
@@ -127,6 +152,100 @@
 			path = "Youtube MVVM ProductUITests";
 			sourceTree = "<group>";
 		};
+		53D5EA5C2BE74F3900C778E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA352BE74E7D00C778E8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53D5EA5D2BE74F3D00C778E8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA322BE74E7C00C778E8 /* Main.storyboard */,
+				53D5EA372BE74E7D00C778E8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		53D5EA5E2BE74F4000C778E8 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA632BE7505100C778E8 /* Product */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		53D5EA5F2BE74F4200C778E8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA692BE7544F00C778E8 /* ApiManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		53D5EA602BE74F4500C778E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA772BE7E8F900C778E8 /* UIImageView + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		53D5EA612BE74F4B00C778E8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA6B2BE755FB00C778E8 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		53D5EA622BE74F4F00C778E8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA2C2BE74E7C00C778E8 /* AppDelegate.swift */,
+				53D5EA2E2BE74E7C00C778E8 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		53D5EA632BE7505100C778E8 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA662BE7506500C778E8 /* Model */,
+				53D5EA652BE7506300C778E8 /* View */,
+				53D5EA642BE7505F00C778E8 /* ViewModel */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		53D5EA642BE7505F00C778E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA702BE7DBAB00C778E8 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53D5EA652BE7506300C778E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA6D2BE75F8F00C778E8 /* ProductListViewController.swift */,
+				53D5EA722BE7DEF300C778E8 /* ProductCell.swift */,
+				53D5EA732BE7DEF300C778E8 /* ProductCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D5EA662BE7506500C778E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53D5EA672BE750F900C778E8 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +262,9 @@
 			dependencies = (
 			);
 			name = "Youtube MVVM Product";
+			packageProductDependencies = (
+				5303DBD62BE7EB950075EF3E /* Kingfisher */,
+			);
 			productName = "Youtube MVVM Product";
 			productReference = 53D5EA292BE74E7C00C778E8 /* Youtube MVVM Product.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +337,9 @@
 				Base,
 			);
 			mainGroup = 53D5EA202BE74E7C00C778E8;
+			packageReferences = (
+				53D5EA762BE7E8CB00C778E8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 53D5EA2A2BE74E7C00C778E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D5EA362BE74E7D00C778E8 /* Assets.xcassets in Resources */,
+				53D5EA752BE7DEF300C778E8 /* ProductCell.xib in Resources */,
 				53D5EA392BE74E7D00C778E8 /* Base in Resources */,
 				53D5EA342BE74E7C00C778E8 /* Base in Resources */,
 			);
@@ -258,9 +384,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D5EA312BE74E7C00C778E8 /* ViewController.swift in Sources */,
+				53D5EA782BE7E8F900C778E8 /* UIImageView + Extension.swift in Sources */,
+				53D5EA712BE7DBAB00C778E8 /* ProductViewModel.swift in Sources */,
+				53D5EA6C2BE755FB00C778E8 /* Constants.swift in Sources */,
+				53D5EA6A2BE7544F00C778E8 /* ApiManager.swift in Sources */,
 				53D5EA2D2BE74E7C00C778E8 /* AppDelegate.swift in Sources */,
 				53D5EA2F2BE74E7C00C778E8 /* SceneDelegate.swift in Sources */,
+				53D5EA742BE7DEF300C778E8 /* ProductCell.swift in Sources */,
+				53D5EA6E2BE75F8F00C778E8 /* ProductListViewController.swift in Sources */,
+				53D5EA682BE750F900C778E8 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +739,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53D5EA762BE7E8CB00C778E8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5303DBD62BE7EB950075EF3E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53D5EA762BE7E8CB00C778E8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53D5EA212BE74E7C00C778E8 /* Project object */;
 }
