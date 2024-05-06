@@ -14,7 +14,8 @@ final class ProductViewModel{
     
     func fetchProducts(){
         self.eventHandler?(.loading)
-        ApiManager.shared.fetchProduct { response in
+        ApiManager.shared.request(methodType: [Product].self,
+                                  type: EndpointItmes.products) { response in
             self.eventHandler?(.stopLoading)
             switch response{
             case .success(let products):
@@ -27,6 +28,22 @@ final class ProductViewModel{
             }
         }
     }
+    
+//    func fetchProducts(){
+//        self.eventHandler?(.loading)
+//        ApiManager.shared.fetchProduct { response in
+//            self.eventHandler?(.stopLoading)
+//            switch response{
+//            case .success(let products):
+//                for p in products{
+//                    self.products = products
+//                    self.eventHandler?(.dataLoaded)
+//                }
+//            case .failure(let error):
+//                self.eventHandler?(.error(error))
+//            }
+//        }
+//    }
 }
 
 extension ProductViewModel{
