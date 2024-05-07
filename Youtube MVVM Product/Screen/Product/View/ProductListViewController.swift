@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class ProductListViewController: UIViewController {
     
     //MARK: - Outlets
@@ -18,6 +20,11 @@ class ProductListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configuration()
+    }
+    
+    @IBAction func addProductButtonTaped(_ sender: UIBarButtonItem) {
+        let parameter = AddProduct(title: "BMW")
+        producViewModel.addProducts(parameter: parameter)
     }
 }
 
@@ -44,6 +51,8 @@ extension ProductListViewController{
                     self.productTableView.reloadData()
                 }
             case .error(let error) : print(error!)
+            case .newProductAdded(addProduct: let addProduct):
+                print(addProduct)
             }
         }
     }

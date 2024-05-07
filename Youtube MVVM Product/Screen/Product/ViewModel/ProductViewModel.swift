@@ -15,35 +15,29 @@ final class ProductViewModel{
     func fetchProducts(){
         self.eventHandler?(.loading)
         ApiManager.shared.request(methodType: [Product].self,
-                                  type: EndpointItmes.products) { response in
+                                  type: ProductEndpoint.products) { response in
             self.eventHandler?(.stopLoading)
             switch response{
             case .success(let products):
-                for p in products{
-                    self.products = products
-                    self.eventHandler?(.dataLoaded)
-                }
+                self.products = products
+                self.eventHandler?(.dataLoaded)
             case .failure(let error):
                 self.eventHandler?(.error(error))
             }
         }
     }
     
-//    func fetchProducts(){
-//        self.eventHandler?(.loading)
-//        ApiManager.shared.fetchProduct { response in
-//            self.eventHandler?(.stopLoading)
-//            switch response{
-//            case .success(let products):
-//                for p in products{
-//                    self.products = products
-//                    self.eventHandler?(.dataLoaded)
-//                }
-//            case .failure(let error):
-//                self.eventHandler?(.error(error))
-//            }
-//        }
-//    }
+    func addProducts(parameter: AddProduct){
+        ApiManager.shared.request(methodType: AddProduct.self,
+                                  type: ProductEndpoint.addProduct(product: parameter)) { response in
+            switch response{
+            case .success(let newProduct):
+                self.eventHandler?(.newProductAdded(addProduct: newProduct))
+            case .failure(let error):
+                self.eventHandler?(.error(error))
+            }
+        }
+    }
 }
 
 extension ProductViewModel{
@@ -52,5 +46,6 @@ extension ProductViewModel{
     case stopLoading
     case dataLoaded
     case error(Error?)
+        case newProductAdded(addProduct :AddProduct)
     }
 }
